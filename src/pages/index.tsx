@@ -32,8 +32,9 @@ export const getStaticProps = async () => {
     props : {
       allBooks,
       randomBooks
-    }
-  }
+    },
+    // revalidate : 3,  ISR 방식 3초마다 페이지를 새로고침
+  };
 }
 
 
